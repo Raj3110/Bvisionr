@@ -1,0 +1,606 @@
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+
+/* Navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+.left-section a {
+  color: grey;
+  text-decoration: none;
+  font-size: 2vw; /* Responsive font size */
+  font-family: cursive;
+  margin-left: 13vw; /* Responsive margin */
+}
+
+.b-tag {
+  color: black;
+}
+
+.right-section {
+  margin-right: 13vw; /* Responsive margin */
+}
+
+.right-section a {
+  color: black;
+  text-decoration: none;
+  margin-right: 2.5vw; /* Responsive margin */
+  font-size: 1.1vw; /* Responsive font size */
+  font-family: "Roboto";
+  font-weight: light;
+}
+
+#overview {
+  color: rgb(117, 114, 114);
+}
+
+.apply-button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 0.5vw 1vw; /* Responsive padding */
+  font-size: 1vw; /* Responsive font size */
+  cursor: pointer;
+  border-radius: 35px;
+  margin-left: 2vw; /* Responsive margin */
+}
+
+/* Message section */
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh; /* Responsive height */
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  font-family: "roboto";
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 1.5vw; /* Responsive font size */
+  height: 100%;
+}
+
+#try-now {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+/* Card section */
+.container {
+  background: linear-gradient(
+    180deg,
+    /* Vertical gradient */ rgba(188, 211, 255, 0.9) 0%,
+    /* Lightened blue */ rgba(207, 236, 220, 0.9) 50%,
+    /* Lightened green */ rgba(255, 255, 255, 0.9) 100% /* Lightened white */
+  );
+  height: max-content; /* Remove fixed height */
+  width: 100%;
+  padding: 5vh 0; /* Responsive padding */
+}
+
+.custom {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(to right, #e0ffff, #87ceeb, #6495ed, #4169e1);
+  height: 120vh;
+}
+
+.fa-brands {
+  margin-right: 1vw;
+}
+
+.card {
+  text-align: center;
+  font-family: "Open sans";
+  font-size: 2.5vw; /* Responsive font size */
+  padding-top: 0vh; /* Responsive padding */
+}
+
+.text {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 6.5vw; /* Responsive font size */
+  font-weight: bold;
+  word-spacing: -0.1em; /* Responsive word spacing */
+  line-height: 15vh;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2vh; /* Responsive margin */
+}
+
+.apply-container-button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 2vw 4.5vw; /* Responsive padding */
+  font-size: 1vw; /* Responsive font size */
+  cursor: pointer;
+  border-radius: 35px;
+  padding: 1vw 2vw; /* Responsive padding */
+  font-size: 1.5vw; /* Responsive font size */
+  margin-left: 0.5vw; /* Responsive margin */
+  margin-bottom: 1.5vw;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.container-img {
+  width: 35%; /* Responsive width */
+  max-width: 100%; /* Ensure image doesn't exceed container width */
+}
+
+.container-2 {
+  margin-top: 10vh; /* Responsive margin */
+  margin-bottom: 10vh; /* Responsive margin */
+  width: 100%;
+}
+
+.container-2-txt {
+  text-align: center;
+  font-family: "open sans";
+  font-size: 2.3vw; /* Responsive font size */
+  line-height: 6vh;
+}
+/* ---start */
+.container-3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh; /* Responsive margin */
+  margin-bottom: 10vh; /* Responsive margin */
+  width: 100%;
+  height: 80vh;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.container-3-box,
+.container-6-box,
+.container-6-1-box {
+  width: 100%; /* Take full width initially */
+  max-width: 74%; /* Maximum width */
+  box-shadow: 2px 1px 10px 5px rgba(215, 208, 208, 0.5);
+  border-radius: 4vw; /* Responsive border radius */
+  margin: 0 5vw 5vh; /* Responsive margin */
+  display: flex; /* Use flexbox for container-3-box */
+  height: 100vh;
+  align-items: center; /* Vertically align items */
+}
+
+.container-6-box {
+  margin-top: -4vw;
+}
+.container-6-1-box {
+  margin-top: 3vw;
+}
+
+.container-3-txt,
+.container-6-txt {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6vw; /* Responsive font size */
+  font-weight: 300;
+  text-align: left;
+  margin: 5vh 5vw; /* Responsive margin */
+}
+
+.container-6-txt {
+  font-size: 1.6vw;
+  text-align: justify;
+  width: 60%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .container-3-txt,
+  .container-6-txt {
+    font-size: 4vw; /* Increase font size for smaller screens */
+    margin: 3vh 3vw; /* Adjust margin for smaller screens */
+  }
+}
+
+.container-3-img {
+  height: auto; /* Allow the image height to adjust according to width */
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 75vh; /* Adjusted maximum height for the image */
+  margin: 0 5vw; /* Responsive margin */
+}
+
+.container-6-img {
+  height: auto; /* Allow the image height to adjust according to width */
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 50vh; /* Adjusted maximum height for the image */
+  margin: 0vw 14vw; /* Responsive margin */
+  margin-left: 0;
+}
+
+.container-6-1-img {
+  height: auto; /* Allow the image height to adjust according to width */
+  max-width: 100%; /* Ensure the image doesn't exceed the container width */
+  max-height: 75vh; /* Adjusted maximum height for the image */
+  margin: 0vw 14vw; /* Responsive margin */
+  margin-left: 0;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .container-3-box,
+  .container-6-1-box {
+    max-width: 100%; /* Take full width on smaller screens */
+    margin: 0 5vw 5vh; /* Adjust margin */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .c6-txt {
+    font-size: 2vh;
+    text-align: justify;
+  }
+
+  .container-6-1-box {
+    margin-top: 24vh;
+  }
+
+  .container-3-img,
+  .container-6-img {
+    max-width: 100%;
+    max-height: 40%; /* Ensure image takes full width on smaller screens */
+    height: auto; /* Allow image height to adjust on smaller screens */
+    margin-bottom: 5vh; /* Add margin below image on smaller screens */
+  }
+
+  .container-6-1-img {
+    height: auto; /* Allow the image height to adjust according to width */
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 50vh; /* Adjusted maximum height for the image */
+    margin: 0vw 14vw; /* Responsive margin */
+  }
+
+  .container-6-box {
+    max-width: 100%; /* Take full width on smaller screens */
+    margin: 14vw 5vw 5vh; /* Adjust margin */
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+}
+
+/*----- end*/
+
+.custom-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 22vh;
+  height: 100vh;
+}
+
+.custom-container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  width: calc(39% - 2rem); /* Adjusted width for two columns with some margin */
+  margin: 2vh; /* Margin between each box */
+  box-shadow: 2px 1px 10px 5px rgba(215, 208, 208, 0.5);
+  border-radius: 4vw; /* Responsive border radius */
+  overflow: hidden; /* Ensure border radius applies correctly */
+}
+
+.custom-container-content {
+  padding: 1.5rem;
+}
+
+.custom-container-content h4 {
+  font-family: "roboto-italic", "open sans";
+  font-size: 1.9rem; /* Heading font size */
+  padding: 0;
+  margin: 0;
+}
+
+.custom-container-content p {
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 3.5vh; /* Paragraph font size */
+  line-height: 4vh;
+  word-spacing: 0.4vh;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .custom-container-box {
+    width: calc(100% - 2rem); /* Full width on smaller screens */
+  }
+}
+
+/* ------------- */
+
+.container-5 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh; /* Responsive margin */
+  margin-bottom: 10vh; /* Responsive margin */
+  width: 100%;
+  height: 80vh;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.box-margin {
+  margin-top: 30vh;
+}
+
+.container-5-box {
+  width: 100%; /* Take full width initially */
+  max-width: 74%; /* Maximum width */
+  box-shadow: 2px 1px 10px 5px rgba(215, 208, 208, 0.5);
+  border-radius: 4vw; /* Responsive border radius */
+  margin: 0 5vw 5vh; /* Responsive margin */
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  align-items: center; /* Vertically align items */
+}
+
+.container-5-txt h4 {
+  font-family: "roboto-italic", "open sans";
+  font-size: 1.9rem; /* Heading font size */
+  padding: 0;
+  margin: 0;
+}
+
+.container-5-txt {
+  width: 80%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7vw; /* Responsive font size */
+  text-align: left;
+  font-weight: 300;
+  margin: 5vh 5vw; /* Responsive margin */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .container-5-txt,
+  .container-5-txt h4 {
+    font-size: 4vw; /* Increase font size for smaller screens */
+    margin: 3vh 3vw; /* Adjust margin for smaller screens */
+  }
+
+  .box-margin {
+    margin-top: 37vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-5-box {
+    max-width: 100%; /* Take full width on smaller screens */
+    max-height: 100%;
+    margin: 14vw 5vw 5vh; /* Adjust margin */
+    flex-direction: row-reverse; /* Stack items vertically on smaller screens */
+  }
+}
+
+.empty-container {
+  height: 50vh;
+  width: max-content;
+}
+
+/* ---------------- */
+
+/* phone thing */
+
+@media only screen and (max-width: 600px) {
+  .container-3 {
+    margin-top: 20vh;
+  }
+  .container-5 {
+    margin-top: 15vh;
+  }
+  .box-margin {
+    margin-top: 40vh;
+  }
+  .custom-container {
+    display: none;
+  }
+}
+
+/* ----- */
+
+.networking-tab {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(241, 238, 238);
+}
+
+.networking-tab h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: "Open sans";
+  margin-bottom: 10vh;
+  margin-top: 0;
+  padding-top: 5vh;
+}
+
+.network {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.scan,
+.connect,
+.tap {
+  height: 10vh;
+  width: 30%;
+  height: 70vh;
+  border-radius: 5vh;
+}
+
+.scan {
+  margin-left: 4vh;
+  background-color: #1bffc8;
+}
+
+.connect {
+  background-color: #6a79ff;
+  color: white;
+}
+
+.tap {
+  margin-right: 4vh;
+  background-color: #404443;
+  color: white;
+}
+
+.scan h1,
+.connect h1,
+.tap h1 {
+  font-size: 3.5vh;
+  font-family: "roboto";
+  font-weight: 400;
+  margin: 5vh 0 0 0;
+  padding: 1vh;
+}
+.scan h2,
+.connect h2,
+.tap h2 {
+  font-size: 4.5vh;
+  font-family: "roboto";
+  font-weight: 600;
+  margin: 0;
+}
+.scan h3,
+.connect h3,
+.tap h3 {
+  font-size: 1.7vh;
+  font-family: "roboto";
+  font-weight: 400;
+  margin: 0;
+  padding: 1vh;
+}
+
+.scan img {
+  height: 36vh;
+  width: 60%;
+  margin-top: 1vh;
+}
+.connect img {
+  height: 34vh;
+  width: 90%;
+  margin-top: 1vh;
+}
+.tap img {
+  margin-top: 5vh;
+  height: 30vh;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .network {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .scan,
+  .connect,
+  .tap {
+    height: 10vh;
+    width: 90%;
+    height: 50vh;
+    border-radius: 5vh;
+    margin: 0vh;
+    margin-bottom: 6vh;
+  }
+
+  .networking-tab h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: "Open sans";
+    margin-bottom: 10vh;
+  }
+
+  .scan img,
+  .connect img,
+  .tap img {
+    display: none;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: #f4f4f4; /* lighter grey background */
+  padding: 40px 0;
+  color: #555; /* slightly darker text color */
+  font-family: Arial, sans-serif; /* updated font */
+  font-size: 1.1rem;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 20px 0; /* increased margin for better spacing */
+  line-height: 1.6; /* increased line height for better readability */
+}
+
+.footer-about {
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 30px auto; /* increased margin for better spacing */
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 0 10px;
+  }
+
+  footer {
+    font-size: 0.6rem;
+    margin-top: 85vh;
+  }
+}
